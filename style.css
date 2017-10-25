@@ -1,0 +1,205 @@
+.container {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.head {
+  width: 180px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-animation: head 1800ms cubic-bezier(0.11, 0.79, 0, 0.99) infinite;
+          animation: head 1800ms cubic-bezier(0.11, 0.79, 0, 0.99) infinite;
+}
+@-webkit-keyframes head {
+  from, to {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  33.3% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  66.6% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+@keyframes head {
+  from, to {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  33.3% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  66.6% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+.face {
+  background: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 35%;
+  -webkit-clip-path: polygon(50% 5%, 78% 2%, 100% 20%, 100% 75%, 75% 95%, 50% 98%, 25% 95%, 0 75%, 0 20%, 22% 2%);
+          clip-path: polygon(50% 5%, 78% 2%, 100% 20%, 100% 75%, 75% 95%, 50% 98%, 25% 95%, 0 75%, 0 20%, 22% 2%);
+  position: relative;
+}
+
+.ear-left {
+  background: -webkit-linear-gradient(#925c11, #462c08);
+  background: linear-gradient(#925c11, #462c08);
+  width: 45px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  -webkit-clip-path: polygon(54% 9%, 100% 0, 100% 100%, 0 70%);
+          clip-path: polygon(54% 9%, 100% 0, 100% 100%, 0 70%);
+  border-radius: 35%;
+}
+
+.ear-right {
+  background: -webkit-linear-gradient(#925c11, #462c08);
+  background: linear-gradient(#925c11, #462c08);
+  width: 45px;
+  height: 100px;
+  position: absolute;
+  right: 4px;
+  bottom: 0;
+  top: -13px;
+  -webkit-transform: rotate(-26deg);
+          transform: rotate(-26deg);
+  -webkit-clip-path: polygon(0 0, 54% 9%, 85% 70%, 0 100%);
+          clip-path: polygon(0 0, 54% 9%, 85% 70%, 0 100%);
+  border-radius: 35%;
+}
+
+.eyes {
+  height: 15px;
+  width: 15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.eyes-left {
+  top: 40px;
+  left: 20px;
+}
+
+.eyes-right {
+  top: 40px;
+  right: 20px;
+}
+
+.inner-eye {
+  height: 5px;
+  width: 5px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.inner-eye--left {
+  top: 6px;
+  left: 10px;
+}
+
+.inner-eye--right {
+  top: 6px;
+  right: 10px;
+}
+
+.nose {
+  height: 20px;
+  width: 20px;
+  background: black;
+  border-radius: 35%;
+  position: absolute;
+  -webkit-clip-path: polygon(50% 0%, 100% 10%, 100% 50%, 50% 75%, 0 50%, 0 10%);
+          clip-path: polygon(50% 0%, 100% 10%, 100% 50%, 50% 75%, 0 50%, 0 10%);
+  top: 55px;
+  left: 40px;
+}
+
+.nose-line {
+  height: 8px;
+  width: 5px;
+  background: #323232;
+  position: absolute;
+  top: 68px;
+  left: 48px;
+}
+
+.mouth {
+  height: 20px;
+  width: 40px;
+  background: black;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: absolute;
+  top: 70px;
+  left: 31px;
+}
+
+.tongue {
+  height: 15px;
+  width: 25px;
+  background: #ff6a80;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  top: 2px;
+  left: 8px;
+}
+
+html, body {
+  background-color: #4FC3F7;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
